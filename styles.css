@@ -1,0 +1,140 @@
+/****************************** Styles provided by the challenge  *****************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/********************************************  Common Styles  ***************************************/
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+/* Font Weight bold applied to the main title and the soon text*/
+.fw-bold {
+    font-weight: 700;
+    color: black;
+}
+
+/* Font Weight light applied to the launching soon message and the subscribe message*/
+.fw-light {
+    font-weight: 300;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15% auto;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.main-container div {
+    width: 80%;
+}
+/********************************************  Mobile Styles   ********************************************/
+        /************************************  Headers Styles  ***********************************/
+.headers-container {
+    text-align: center;
+}
+
+.headers-container * {
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.blue-dot {
+    color: hsl(223, 87%, 63%);
+}
+
+.main-title {
+    font-size: 20px;
+}
+
+.launching-soon {
+    font-size: 24px;
+    color: hsl(0, 0%, 59%);
+}
+
+.subscribe-message {
+    font-size: 16px;
+}
+        /************************************  Input Email Styles  ***********************************/
+
+.input-container .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 0;
+}
+
+.form .email-input-container {
+    width: 80%;
+    margin-bottom: 3%;
+}
+.email-input{
+    width: 100%;
+    padding: 3% 0;
+    padding-left: 6%;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 20px;
+}
+
+.wrong-email {
+    color: red;
+    font-style: italic;
+    font-size: 12px;
+    margin-left: 2%;
+    display: none;
+}
+
+.notify-button {
+    padding: 3% 0;
+    width: 80%;
+    background-color: hsl(223, 87%, 63%);
+    border-radius: 20px;
+    border-style: none;
+    color: white;
+}
+        /************************************  Image Styles  ***********************************/
+
+.ping-image {
+    width: 100%;
+}
+
+        /************************************  Icons Styles  ***********************************/
+
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5% 0;
+}
+
+.icon {
+    border: 1px solid hsl(0, 0%, 89%);
+    border-radius: 50%;
+    padding: 2%;
+}
+        /************************************  Copyright Styles  ***********************************/
+
+.copyright {
+    font-size: 12px;
+}
+/********************************************  Desktop Styles  **********************************************/
