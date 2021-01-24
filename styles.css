@@ -8,7 +8,7 @@
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(223, 87%, 63%); 
 }
 
 /********************************************  Common Styles  ***************************************/
@@ -88,6 +88,7 @@ body {
     width: 80%;
     margin-bottom: 3%;
 }
+
 .email-input{
     width: 100%;
     padding: 3% 0;
@@ -112,6 +113,11 @@ body {
     border-style: none;
     color: white;
 }
+
+.notify-button:hover {
+    background-color: hsl(223, 100%, 88%);
+    cursor: pointer;
+}
         /************************************  Image Styles  ***********************************/
 
 .ping-image {
@@ -130,7 +136,14 @@ body {
 .icon {
     border: 1px solid hsl(0, 0%, 89%);
     border-radius: 50%;
+    color: hsl(223, 87%, 63%);
     padding: 2%;
+}
+
+.icon:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    cursor: pointer;
 }
         /************************************  Copyright Styles  ***********************************/
 
@@ -138,3 +151,54 @@ body {
     font-size: 12px;
 }
 /********************************************  Desktop Styles  **********************************************/
+@media only screen and (min-width: 768px){
+    body {
+        width: 100%;
+    }
+
+    .main-container {
+        margin: 5% auto;
+    }
+
+    .main-container div {
+        width: 90%;
+    }
+
+    .headers-container * {
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+
+    .main-container .input-container {
+        width: 50%;
+    }
+
+    .input-container .form{
+        flex-direction: row;
+        padding: 3% 10%;
+        justify-content: space-between;
+    }
+
+    .form .email-input-container {
+        width: 65%;
+        margin-bottom: 3%;
+    }
+
+    .notify-button {
+        padding: 2% 0;
+        width: 30%;
+        /* I needed to move the button a little bit upwards to match the aligment with the input.
+        But, when the email is not valid, the margin-top should change to -6%. I fix this using Js
+        */
+        margin-top: -3%;
+    }
+
+    .main-container .image-container {
+        width: 50%;
+        height: 50%;
+    }
+
+    .main-container .social-media-icons {
+        width: 30%;
+    }
+}
